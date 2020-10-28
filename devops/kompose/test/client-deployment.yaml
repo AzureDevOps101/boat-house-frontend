@@ -14,7 +14,7 @@ spec:
         app: client
     spec:
       containers:
-      - image: #{BOATHOUSE_CONTAINER_REGISTRY}#/#{BOATHOUSE_ORG_NAME}#/boat-house-frontend/client:#{env.BRANCH_NAME}#-#{env.BUILD_ID}#
+      - image: #{BOATHOUSE_CONTAINER_REGISTRY}#/#{BOATHOUSE_ORG_NAME}#/boat-house-frontend/client:latest
         name: client
         ports:
         - containerPort: 8080

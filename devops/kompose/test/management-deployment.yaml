@@ -14,7 +14,7 @@ spec:
         app: management
     spec:
       containers:
-      - image: #{BOATHOUSE_CONTAINER_REGISTRY}#/#{BOATHOUSE_ORG_NAME}#/boat-house-frontend/management:#{env.BRANCH_NAME}#-#{env.BUILD_ID}#
+      - image: #{BOATHOUSE_CONTAINER_REGISTRY}#/#{BOATHOUSE_ORG_NAME}#/boat-house-frontend/management:latest
         name: management
         ports:
         - containerPort: 4000
